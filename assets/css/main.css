@@ -1431,7 +1431,7 @@ input, select, textarea {
 		max-width: 100%;
 		margin: 0 auto 2em auto;
 	}
-
+/*
 		.gallery article {
 			-moz-transition: -moz-transform 1s ease, opacity 1s ease;
 			-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
@@ -1445,7 +1445,7 @@ input, select, textarea {
 			position: relative;
 			opacity: 1.0;
 		}
-
+*/
 			.gallery article .image {
 				margin: 0;
 				display: block;
