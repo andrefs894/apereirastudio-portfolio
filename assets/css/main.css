@@ -2258,6 +2258,14 @@ input, select, textarea {
 		background-repeat: repeat, no-repeat;
 	}
 
+	#goone {
+		background: url("images/overlay.png"), url("../../images/fulls/go1.png");
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, bottom center;
+		background-repeat: repeat, no-repeat;
+	}
+
 /* One */
 
 	#one {
