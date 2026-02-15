@@ -1118,7 +1118,6 @@ a {
 
 .project-gallery .full-width {
     grid-column: 1 / -1;
-    max-height: calc(100vw - 6rem);
 }
 
 .project-nav {
