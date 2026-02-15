@@ -1108,9 +1108,16 @@ a {
 }
 
 .project-gallery img {
-    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
     border-radius: var(--radius-md);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    object-fit: cover;
+}
+
+.project-gallery img:not(.full-width) {
+    height: 100%;
 }
 
 .project-gallery .full-width {
