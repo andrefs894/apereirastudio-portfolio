@@ -195,8 +195,8 @@ a {
 }
 
 .lang-current:hover {
-    border-color: var(--color-primary);
-    background: var(--color-bg-alt);
+    border-color: var(--color-border);
+    background: none;
 }
 
 .flag-icon {
@@ -240,7 +240,7 @@ a {
 }
 
 .lang-option:hover {
-    background: var(--color-bg-alt);
+    background: none;
 }
 
 .lang-switcher-mobile {
