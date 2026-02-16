@@ -1131,18 +1131,24 @@ a {
 }
 
 .project-content {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 3rem 4rem;
+    padding: 4rem 3rem;
+}
+
+.project-sections-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
 }
 
 .project-section {
-    margin-bottom: 3rem;
+    margin-bottom: 0;
 }
 
 .project-section h2 {
     font-family: var(--font-display);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 700;
     margin-bottom: 1rem;
     color: var(--color-primary);
@@ -1150,9 +1156,16 @@ a {
 
 .project-section p {
     color: var(--color-text-muted);
-    font-size: 1.05rem;
+    font-size: 0.95rem;
     line-height: 1.8;
     margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .project-sections-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
 }
 
 .project-gallery {
