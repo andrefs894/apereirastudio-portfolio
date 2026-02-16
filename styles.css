@@ -393,7 +393,7 @@ a {
 .hero-decoration-2 {
     position: absolute;
     bottom: 15%;
-    right: 10%;
+    right: 5%;
     width: 60px;
     height: 60px;
     background: var(--color-secondary);
