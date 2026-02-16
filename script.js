@@ -128,6 +128,20 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Language switcher dropdown
+    const langSwitcher = document.querySelector('.lang-switcher');
+    if (langSwitcher) {
+        const langBtn = langSwitcher.querySelector('.lang-current');
+        langBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            langSwitcher.classList.toggle('active');
+        });
+
+        document.addEventListener('click', () => {
+            langSwitcher.classList.remove('active');
+        });
+    }
+
     // Cursor effect for work items (desktop only)
     if (window.innerWidth > 768) {
         const workItems = document.querySelectorAll('.work-item');

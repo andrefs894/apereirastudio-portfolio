@@ -172,6 +172,94 @@ a {
     font-weight: 700;
 }
 
+/* Language Switcher */
+.lang-switcher {
+    position: relative;
+    margin-left: 0.5rem;
+}
+
+.lang-current {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: none;
+    border: 1.5px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    padding: 0.4rem 0.7rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--color-text);
+    transition: all 0.2s ease;
+    font-family: var(--font-body);
+}
+
+.lang-current:hover {
+    border-color: var(--color-primary);
+    background: var(--color-bg-alt);
+}
+
+.flag-icon {
+    width: 20px;
+    height: 15px;
+    border-radius: 2px;
+}
+
+.lang-dropdown {
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    right: 0;
+    background: var(--color-card);
+    border: 1.5px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-5px);
+    transition: all 0.2s ease;
+    z-index: 1001;
+    min-width: 100px;
+}
+
+.lang-switcher.active .lang-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.lang-option {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 0.8rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--color-text);
+    transition: background 0.2s ease;
+    white-space: nowrap;
+}
+
+.lang-option:hover {
+    background: var(--color-bg-alt);
+}
+
+.lang-switcher-mobile {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--color-border);
+}
+
+.lang-switcher-mobile .lang-option {
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
+    justify-content: center;
+}
+
+.lang-switcher-mobile .flag-icon {
+    width: 24px;
+    height: 18px;
+}
+
 /* ========================================
    Hero Section
    ======================================== */
