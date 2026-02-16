@@ -455,11 +455,6 @@ a {
     }
 }
 
-@keyframes scrollLine {
-    0%, 100% { transform: translateY(-100%); }
-    50% { transform: translateY(400%); }
-}
-
 /* ========================================
    Marquee
    ======================================== */
@@ -1154,10 +1149,6 @@ a {
     
     .hero-title {
         font-size: 2.2rem;
-    }
-    
-    .hero-scroll {
-        display: none;
     }
     
     .work-grid {
