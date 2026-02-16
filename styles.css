@@ -643,7 +643,7 @@ a {
    ======================================== */
 .services {
     padding: 6rem 0;
-    background: var(--color-bg);
+    background: var(--color-bg-alt);
 }
 
 .services-grid {
@@ -726,7 +726,7 @@ a {
    ======================================== */
 .testimonials {
     padding: 6rem 0;
-    background: var(--color-bg-alt);
+    background: var(--color-bg);
 }
 
 .testimonials-grid {
