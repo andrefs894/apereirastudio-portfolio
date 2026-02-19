@@ -803,6 +803,20 @@ a {
     }
 }
 
+.service-arrow {
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.service-arrow:hover {
+    background: var(--color-bg-alt);
+}
+
 /* ========================================
    Service Modal
    ======================================== */
