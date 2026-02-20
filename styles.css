@@ -821,7 +821,7 @@ a {
     font-weight: 700;
 }
 
-..service-cta {
+.service-cta {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
