@@ -752,31 +752,26 @@ a {
 .service-toggle-icon {
     font-size: 0.85rem;
     font-weight: 700;
-    transition: color 0.3s ease;
 }
 
 .service-item:nth-child(1) .service-header:hover .service-toggle,
 .service-item:nth-child(1).active .service-toggle {
-    background: var(--color-primary);
-    color: var(--color-text-light);
+    color: var(--color-primary);
 }
 
 .service-item:nth-child(2) .service-header:hover .service-toggle,
 .service-item:nth-child(2).active .service-toggle {
-    background: var(--color-accent);
-    color: var(--color-text-light);
+    color: var(--color-accent);
 }
 
 .service-item:nth-child(3) .service-header:hover .service-toggle,
 .service-item:nth-child(3).active .service-toggle {
-    background: var(--color-secondary);
-    color: var(--color-text-light);
+    color: var(--color-secondary);
 }
 
 .service-item:nth-child(4) .service-header:hover .service-toggle,
 .service-item:nth-child(4).active .service-toggle {
-    background: var(--color-text-muted);
-    color: var(--color-text-light);
+    color: var(--color-text-muted);
 }
 
 .service-details {
