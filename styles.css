@@ -741,7 +741,7 @@ a {
     padding: 0.35rem 0.75rem;
     border-radius: 20px;
     font-weight: 700;
-    font-size: 0.65rem;
+    font-size: 0.8rem;
     text-transform: uppercase;
     letter-spacing: 0.03em;
     color: var(--color-text-muted);
@@ -750,7 +750,7 @@ a {
 }
 
 .service-toggle-icon {
-    font-size: 0.85rem;
+    font-size: 1rem;
     font-weight: 700;
 }
 
