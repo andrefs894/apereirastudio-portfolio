@@ -2,36 +2,24 @@
 // APereira Studio — JavaScript
 // ========================================
 
-// Service Modals
-function openModal(modalId) {
-    document.getElementById(modalId).classList.add('active');
-    document.body.style.overflow = 'hidden';
-}
-
-function closeModal(modalId) {
-    document.getElementById(modalId).classList.remove('active');
-    document.body.style.overflow = '';
-}
-
-// Close modal when clicking outside
-document.querySelectorAll('.modal-overlay').forEach(overlay => {
-    overlay.addEventListener('click', (e) => {
-        if (e.target === overlay) {
-            overlay.classList.remove('active');
-            document.body.style.overflow = '';
-        }
+// Service Accordion
+function toggleService(header) {
+    const item = header.parentElement;
+    const isActive = item.classList.contains('active');
+    const icon = header.querySelector('.service-toggle-icon');
+    
+    // Close all other items and reset icons
+    document.querySelectorAll('.service-item').forEach(el => {
+        el.classList.remove('active');
+        el.querySelector('.service-toggle-icon').textContent = '+';
     });
-});
-
-// Close modal with Escape key
-document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-        document.querySelectorAll('.modal-overlay.active').forEach(modal => {
-            modal.classList.remove('active');
-        });
-        document.body.style.overflow = '';
+    
+    // Toggle current item
+    if (!isActive) {
+        item.classList.add('active');
+        icon.textContent = '−';
     }
-});
+}
 
 document.addEventListener('DOMContentLoaded', () => {
     // Navigation scroll effect
