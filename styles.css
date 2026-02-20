@@ -737,42 +737,45 @@ a {
 .service-toggle {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
+    gap: 0.5rem;
+    padding: 0.35rem 0.75rem;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--color-text-muted);
+    transition: all 0.3s ease;
     flex-shrink: 0;
 }
 
-.service-toggle-text {
+.service-toggle-icon {
     font-size: 0.85rem;
-    font-weight: 600;
-    color: var(--color-text-muted);
+    font-weight: 700;
     transition: color 0.3s ease;
 }
 
-.service-header:hover .service-toggle-text {
-    color: var(--color-primary);
-}
-
-.service-toggle-icon {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    background: var(--color-bg-alt);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.25rem;
-    font-weight: 300;
-    color: var(--color-text-muted);
-    transition: all 0.3s ease;
-}
-
-.service-header:hover .service-toggle-icon {
+.service-item:nth-child(1) .service-header:hover .service-toggle,
+.service-item:nth-child(1).active .service-toggle {
     background: var(--color-primary);
     color: var(--color-text-light);
 }
 
-.service-item.active .service-toggle-icon {
-    background: var(--color-primary);
+.service-item:nth-child(2) .service-header:hover .service-toggle,
+.service-item:nth-child(2).active .service-toggle {
+    background: var(--color-accent);
+    color: var(--color-text-light);
+}
+
+.service-item:nth-child(3) .service-header:hover .service-toggle,
+.service-item:nth-child(3).active .service-toggle {
+    background: var(--color-secondary);
+    color: var(--color-text-light);
+}
+
+.service-item:nth-child(4) .service-header:hover .service-toggle,
+.service-item:nth-child(4).active .service-toggle {
+    background: var(--color-text-muted);
     color: var(--color-text-light);
 }
 
@@ -823,22 +826,6 @@ a {
     font-weight: 700;
 }
 
-.service-item:nth-child(1) .service-details-inner ul li::before {
-    color: var(--color-primary);
-}
-
-.service-item:nth-child(2) .service-details-inner ul li::before {
-    color: var(--color-accent);
-}
-
-.service-item:nth-child(3) .service-details-inner ul li::before {
-    color: var(--color-secondary);
-}
-
-.service-item:nth-child(4) .service-details-inner ul li::before {
-    color: var(--color-text-muted);
-}
-
 .service-cta {
     display: inline-flex;
     align-items: center;
@@ -874,7 +861,7 @@ a {
         border-radius: 14px;
     }
     
-    .service-toggle-text {
+    .service-toggle span:first-child {
         display: none;
     }
     
