@@ -821,12 +821,11 @@ a {
     font-weight: 700;
 }
 
-.service-cta {
+..service-cta {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
     padding: 1rem 1.75rem;
-    background: var(--color-primary);
     color: var(--color-text-light);
     border-radius: 30px;
     font-weight: 700;
@@ -837,7 +836,23 @@ a {
 
 .service-cta:hover {
     transform: scale(1.05);
-    background: var(--color-primary-light);
+    filter: brightness(1.1);
+}
+
+.service-item:nth-child(1) .service-cta {
+    background: var(--color-primary);
+}
+
+.service-item:nth-child(2) .service-cta {
+    background: var(--color-accent);
+}
+
+.service-item:nth-child(3) .service-cta {
+    background: var(--color-secondary);
+}
+
+.service-item:nth-child(4) .service-cta {
+    background: var(--color-text-muted);
 }
 
 @media (max-width: 768px) {
