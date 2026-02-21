@@ -535,7 +535,7 @@ a {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     padding: 0 3rem;
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
