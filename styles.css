@@ -10,13 +10,13 @@
     --color-bg-dark: #000001;
     --color-text: #000001;
     --color-text-light: #fefcf3;
-    --color-text-muted: #ede9e6;
+    --color-text-muted: #6B6B6B;
     --color-primary: #ef6a34;
     --color-primary-light: #ef6a34;
     --color-secondary: #5e0100;
     --color-accent: #053b64;
     --color-accent-light: #053b64;
-    --color-border: #ede9e6;
+    --color-border: #E8E4DE;
     --color-card: #fefcf3;
     
     --font-display: 'DM Sans', -apple-system, sans-serif;
@@ -680,19 +680,19 @@ a {
 }
 
 .service-icon.icon-coral {
-    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    background: var(--color-primary);
 }
 
 .service-icon.icon-teal {
-    background: linear-gradient(135deg, var(--color-accent), #053b64);
+    background: var(--color-accent);
 }
 
 .service-icon.icon-orange {
-    background: linear-gradient(135deg, var(--color-secondary), #5e0100);
+    background: var(--color-secondary);
 }
 
 .service-icon.icon-gray {
-    background: linear-gradient(135deg, var(--color-text-muted), #ede9e6);
+    background: var(--color-text-muted);
 }
 
 .service-content {
@@ -1420,7 +1420,7 @@ a {
     left: 50px;
     right: 50px;
     height: 3px;
-    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary), var(--color-accent));
+    background: var(--color-primary);
     border-radius: 3px;
     z-index: 0;
 }
@@ -1450,16 +1450,6 @@ a {
     flex-shrink: 0;
 }
 
-.timeline-item:nth-child(2) .timeline-marker {
-    border-color: var(--color-secondary);
-    color: var(--color-secondary);
-}
-
-.timeline-item:nth-child(3) .timeline-marker {
-    border-color: var(--color-accent);
-    color: var(--color-accent);
-}
-
 .timeline-content {
     background: var(--color-card);
     border-radius: var(--radius-md);
@@ -1474,9 +1464,7 @@ a {
     margin-bottom: 0.75rem;
 }
 
-.timeline-item:nth-child(1) .timeline-content h3 { color: var(--color-primary); }
-.timeline-item:nth-child(2) .timeline-content h3 { color: var(--color-secondary); }
-.timeline-item:nth-child(3) .timeline-content h3 { color: var(--color-accent); }
+.timeline-content h3 { color: var(--color-primary); }
 
 .timeline-content p {
     color: var(--color-text-muted);
@@ -1499,7 +1487,7 @@ a {
         right: auto;
         width: 3px;
         height: auto;
-        background: linear-gradient(180deg, var(--color-primary), var(--color-secondary), var(--color-accent));
+        background: var(--color-primary);
     }
     
     .timeline-item {
