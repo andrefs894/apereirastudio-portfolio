@@ -5,19 +5,19 @@
 
 /* CSS Variables */
 :root {
-    --color-bg: #FFFBF7;
-    --color-bg-alt: #FFF5ED;
-    --color-bg-dark: #1A1A1A;
-    --color-text: #1A1A1A;
-    --color-text-light: #FFFFFF;
-    --color-text-muted: #6B6B6B;
-    --color-primary: #E85D4C;
-    --color-primary-light: #FF7A6B;
-    --color-secondary: #F4A261;
-    --color-accent: #2A9D8F;
-    --color-accent-light: #40B4A6;
-    --color-border: #E8E4DE;
-    --color-card: #FFFFFF;
+    --color-bg: #fefcf3;
+    --color-bg-alt: #fefcf3;
+    --color-bg-dark: #000001;
+    --color-text: #000001;
+    --color-text-light: #fefcf3;
+    --color-text-muted: #ede9e6;
+    --color-primary: #ef6a34;
+    --color-primary-light: #ef6a34;
+    --color-secondary: #5e0100;
+    --color-accent: #053b64;
+    --color-accent-light: #053b64;
+    --color-border: #ede9e6;
+    --color-card: #fefcf3;
     
     --font-display: 'DM Sans', -apple-system, sans-serif;
     --font-body: 'DM Sans', -apple-system, sans-serif;
@@ -76,7 +76,7 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 1.25rem 3rem;
-    background: rgba(255, 251, 247, 0.95);
+    background: rgba(254, 252, 243, 0.95);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border-bottom: 2px solid transparent;
@@ -123,7 +123,7 @@ a {
 .nav-cta:hover {
     transform: scale(1.05);
     background: var(--color-primary-light) !important;
-    box-shadow: 0 10px 30px rgba(232, 93, 76, 0.3);
+    box-shadow: 0 10px 30px rgba(239, 106, 52, 0.3);
 }
 
 .nav-toggle {
@@ -325,13 +325,13 @@ a {
     font-size: 1rem;
     text-decoration: none;
     transition: all 0.3s var(--ease-bounce);
-    box-shadow: 0 4px 20px rgba(232, 93, 76, 0.3);
+    box-shadow: 0 4px 20px rgba(239, 106, 52, 0.3);
 }
 
 .hero-cta:hover {
     transform: scale(1.05) translateY(-2px);
     background: var(--color-primary-light);
-    box-shadow: 0 10px 40px rgba(232, 93, 76, 0.4);
+    box-shadow: 0 10px 40px rgba(239, 106, 52, 0.4);
 }
 
 .hero-cta-secondary {
@@ -562,7 +562,7 @@ a {
 .work-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, rgba(26, 26, 26, 0) 0%, rgba(26, 26, 26, 0.8) 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 1, 0) 0%, rgba(0, 0, 1, 0.8) 100%);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -573,7 +573,7 @@ a {
 }
 
 .work-item:hover .work-overlay {
-    background: linear-gradient(180deg, rgba(26, 26, 26, 0.2) 0%, rgba(26, 26, 26, 0.9) 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 1, 0.2) 0%, rgba(0, 0, 1, 0.9) 100%);
 }
 
 .work-category {
@@ -628,13 +628,13 @@ a {
     font-size: 0.95rem;
     letter-spacing: 0.02em;
     transition: all 0.3s var(--ease-bounce);
-    box-shadow: 0 4px 20px rgba(42, 157, 143, 0.3);
+    box-shadow: 0 4px 20px rgba(5, 59, 100, 0.3);
 }
 
 .btn-primary:hover {
     transform: scale(1.05) translateY(-2px);
     background: var(--color-accent-light);
-    box-shadow: 0 10px 40px rgba(42, 157, 143, 0.4);
+    box-shadow: 0 10px 40px rgba(5, 59, 100, 0.4);
 }
 
 /* ========================================
@@ -684,15 +684,15 @@ a {
 }
 
 .service-icon.icon-teal {
-    background: linear-gradient(135deg, var(--color-accent), #40B4A6);
+    background: linear-gradient(135deg, var(--color-accent), #053b64);
 }
 
 .service-icon.icon-orange {
-    background: linear-gradient(135deg, var(--color-secondary), #E9C46A);
+    background: linear-gradient(135deg, var(--color-secondary), #5e0100);
 }
 
 .service-icon.icon-gray {
-    background: linear-gradient(135deg, var(--color-text-muted), #8B8B8B);
+    background: linear-gradient(135deg, var(--color-text-muted), #ede9e6);
 }
 
 .service-content {
@@ -982,7 +982,7 @@ a {
     left: -50%;
     width: 200%;
     height: 200%;
-    background: radial-gradient(circle, rgba(232, 93, 76, 0.1) 0%, transparent 50%);
+    background: radial-gradient(circle, rgba(239, 106, 52, 0.1) 0%, transparent 50%);
     animation: ctaPulse 10s ease-in-out infinite;
 }
 
@@ -1029,13 +1029,13 @@ a {
     font-weight: 700;
     font-size: 1rem;
     transition: all 0.3s var(--ease-bounce);
-    box-shadow: 0 4px 30px rgba(232, 93, 76, 0.4);
+    box-shadow: 0 4px 30px rgba(239, 106, 52, 0.4);
 }
 
 .cta-button:hover {
     transform: scale(1.05) translateY(-2px);
     background: var(--color-primary-light);
-    box-shadow: 0 10px 50px rgba(232, 93, 76, 0.5);
+    box-shadow: 0 10px 50px rgba(239, 106, 52, 0.5);
 }
 
 .cta-button svg {
@@ -1063,7 +1063,7 @@ a {
 .cta-button-outline:hover {
     background: var(--color-primary);
     color: var(--color-text-light);
-    box-shadow: 0 10px 50px rgba(232, 93, 76, 0.5);
+    box-shadow: 0 10px 50px rgba(239, 106, 52, 0.5);
 }
 
 /* ========================================
