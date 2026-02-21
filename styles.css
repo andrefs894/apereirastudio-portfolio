@@ -919,6 +919,7 @@ a {
 .testimonial-quote {
     font-size: 4rem;
     font-weight: 700;
+    line-height: 1;
     color: var(--color-primary);
     opacity: 0.3;
 }
