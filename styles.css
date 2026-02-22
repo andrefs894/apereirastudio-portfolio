@@ -1059,14 +1059,6 @@ a {
     background: rgba(255,255,255,0.1);
 }
 
-.cta-button svg {
-    transition: transform 0.3s var(--ease-out);
-}
-
-.cta-button:hover svg {
-    transform: translate(3px, -3px);
-}
-
 .cta-buttons {
     display: flex;
     gap: 1rem;
