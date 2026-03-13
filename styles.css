@@ -1328,7 +1328,7 @@ a {
    Project Page Styles
    ======================================== */
 .project-hero {
-    padding: 8rem 3rem 3rem;
+    padding-top: 4.5rem;
 }
 
 .project-hero-inner {
@@ -1338,6 +1338,7 @@ a {
     gap: 3rem;
     align-items: center;
     min-height: 450px;
+    padding: 3rem 4rem;
 }
 
 .project-image-container {
@@ -1718,9 +1719,9 @@ a {
 
 @media (max-width: 768px) {
     .project-hero {
-        padding: 6rem 1.5rem 2rem;
+        padding-top: 4rem;
     }
-    
+
     .project-hero-inner {
         grid-template-columns: 1fr;
         padding: 2rem;
