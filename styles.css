@@ -1653,7 +1653,7 @@ a {
    ======================================== */
 
 .project-nav-section {
-    background: var(--color-bg-dark);
+    background: #1A1A1A;
 }
 
 .project-nav {
@@ -1666,6 +1666,7 @@ a {
     position: relative;
     transition: all 0.3s ease;
     text-decoration: none;
+    display: block;
 }
 
 .project-nav-item:first-child {
@@ -1685,24 +1686,24 @@ a {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    color: var(--color-primary);
+    color: #E85D4C;
     margin-bottom: 1rem;
 }
 
 .project-nav-title {
     font-size: 2rem;
     font-weight: 700;
-    color: var(--color-text-light);
+    color: #FFFFFF;
     transition: color 0.3s ease;
 }
 
 .project-nav-item:hover .project-nav-title {
-    color: var(--color-primary);
+    color: #E85D4C;
 }
 
 .project-nav-arrow {
     font-size: 2rem;
-    color: var(--color-text-light);
+    color: #FFFFFF;
     margin-top: 1rem;
     display: block;
     transition: transform 0.3s ease;
