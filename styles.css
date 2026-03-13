@@ -1653,7 +1653,8 @@ a {
    ======================================== */
 
 .project-nav-section {
-    background: #1A1A1A;
+   background: #1A1A1A;
+   margin-top: 4rem;
 }
 
 .project-nav {
