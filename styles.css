@@ -1872,6 +1872,7 @@ a {
 
     .project-nav-item:last-child {
         grid-template-columns: 1fr auto;
+        text-align: left;
     }
 
     .project-nav-item:last-child .project-nav-arrow {
@@ -1879,16 +1880,18 @@ a {
         grid-column: 2;
     }
 
-    .project-nav-item:last-child .project-nav-label {
+    .project-nav-item:last-child .project-nav-label,
+    .project-nav-item:last-child .project-nav-title {
         grid-column: 1;
+        text-align: left !important;
+    }
+
+    .project-nav-item:last-child .project-nav-label {
         grid-row: 1;
-        text-align: left;
     }
 
     .project-nav-item:last-child .project-nav-title {
-        grid-column: 1;
         grid-row: 2;
-        text-align: left;
     }
 
     .project-nav-title {
