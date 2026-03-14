@@ -1452,16 +1452,9 @@ a {
     text-decoration: none;
 }
 
-.project-scroll-indicator span {
-    font-size: 0.75rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
-}
-
 .scroll-arrow {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     border: 2px solid rgba(255,255,255,0.3);
     border-radius: 50%;
     display: flex;
