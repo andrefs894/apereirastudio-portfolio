@@ -1331,13 +1331,13 @@ a {
    min-height: 100vh;
    padding-top: 4.5rem;
    background: var(--color-bg-dark);
-    display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    gap: 3rem;
-    align-items: center;
 }
 
 .project-hero-inner {
+   display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 3rem;
+    align-items: center;
     padding: 6rem 4rem;
 }
 
