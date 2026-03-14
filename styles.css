@@ -1691,6 +1691,7 @@ a {
 
 .gallery-mosaic .mosaic-stack img {
     width: 100%;
+   height: 450px;
     flex: 1;
     object-fit: cover;
     border-radius: var(--radius-md);
