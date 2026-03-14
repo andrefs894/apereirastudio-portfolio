@@ -1704,7 +1704,8 @@ a {
 }
 
 .gallery-solo img {
-    max-width: 50%;
+    max-width: 100%;
+   height: 600px;
     height: auto;
     border-radius: var(--radius-md);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
