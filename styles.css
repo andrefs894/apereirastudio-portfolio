@@ -1871,7 +1871,9 @@ a {
     }
 
     .project-nav-item:last-child {
+        display: grid;
         grid-template-columns: 1fr auto;
+        align-items: center;
         text-align: left;
     }
 
@@ -1884,6 +1886,7 @@ a {
     .project-nav-item:last-child .project-nav-title {
         grid-column: 1;
         text-align: left !important;
+        justify-self: start;
     }
 
     .project-nav-item:last-child .project-nav-label {
