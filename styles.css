@@ -1491,14 +1491,14 @@ a {
     font-weight: 700;
 }
 
-.-horizontal {
+.timeline-horizontal {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     position: relative;
 }
 
-.-horizontal::before {
+.timeline-horizontal::before {
     content: '';
     position: absolute;
     top: 25px;
@@ -1510,7 +1510,7 @@ a {
     z-index: 0;
 }
 
-.-item {
+.timeline-item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1519,7 +1519,7 @@ a {
     z-index: 1;
 }
 
-.-marker {
+.timeline-marker {
     width: 50px;
     height: 50px;
     background: var(--color-card);
@@ -1535,7 +1535,7 @@ a {
     flex-shrink: 0;
 }
 
-.-content {
+.timeline-content {
     background: var(--color-card);
     border-radius: var(--radius-md);
     padding: 2rem;
@@ -1543,27 +1543,27 @@ a {
     height: 100%;
 }
 
-.-content h3 {
+.timeline-content h3 {
     font-size: 1.25rem;
     font-weight: 700;
     margin-bottom: 0.75rem;
     color: var(--color-text);
 }
 
-.-content p {
+.timeline-content p {
     color: var(--color-text-muted);
     font-size: 0.95rem;
     line-height: 1.8;
     text-align: left;
 }
 
-.-content ul {
+.timeline-content ul {
     list-style: none;
     margin: 0.5rem 0;
     padding: 0;
 }
 
-.-content ul li {
+.timeline-content ul li {
     color: var(--color-text-muted);
     font-size: 0.95rem;
     line-height: 1.8;
@@ -1573,7 +1573,7 @@ a {
     margin-bottom: 0.25rem;
 }
 
-.-content ul li::before {
+.timeline-content ul li::before {
     content: '•';
     position: absolute;
     left: 0;
@@ -1581,9 +1581,9 @@ a {
 }
 
 @media (max-width: 768px) {
-    .-horizontal {
+    .timeline-horizontal {
         grid-template-columns: 1fr;
-        gap: 1.5rem;
+        gap: 2rem;
         padding-left: 0;
     }
 
@@ -1593,19 +1593,22 @@ a {
 
     .timeline-item {
         flex-direction: column;
-        text-align: center;
+        align-items: flex-start;
+        text-align: left;
         gap: 0;
     }
 
     .timeline-marker {
-        width: 60px;
-        height: 60px;
-        font-size: 3rem;
-        margin-bottom: 0;
+        width: auto;
+        height: auto;
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
         border-radius: 0;
         border: none;
-        border-bottom: 3px solid var(--color-primary);
         background: transparent;
+        color: var(--color-primary);
+        justify-content: flex-start;
     }
 
     .timeline-content {
@@ -1707,7 +1710,7 @@ a {
 }
 
 .project-nav-item:hover {
-    background: rgba(255,255,255,0.05);
+    background: transparent;
 }
 
 .project-nav-label {
@@ -1727,7 +1730,7 @@ a {
 }
 
 .project-nav-item:hover .project-nav-title {
-    color: #E85D4C;
+    color: #FFFFFF;
 }
 
 .project-nav-arrow {
