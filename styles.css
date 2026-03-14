@@ -1329,7 +1329,7 @@ a {
    ======================================== */
 .project-hero {
    min-height: 100vh;
-   padding-top: 4.5rem;
+   padding-top: 6rem;
    background: var(--color-bg-dark);
 }
 
@@ -1359,7 +1359,7 @@ a {
 
 .project-main-image img {
     width: 100%;
-    height: 350px;
+    height: 450px;
     object-fit: cover;
 }
 
