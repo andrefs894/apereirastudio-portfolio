@@ -1491,14 +1491,14 @@ a {
     font-weight: 700;
 }
 
-.timeline-horizontal {
+.-horizontal {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     position: relative;
 }
 
-.timeline-horizontal::before {
+.-horizontal::before {
     content: '';
     position: absolute;
     top: 25px;
@@ -1510,7 +1510,7 @@ a {
     z-index: 0;
 }
 
-.timeline-item {
+.-item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1519,7 +1519,7 @@ a {
     z-index: 1;
 }
 
-.timeline-marker {
+.-marker {
     width: 50px;
     height: 50px;
     background: var(--color-card);
@@ -1535,7 +1535,7 @@ a {
     flex-shrink: 0;
 }
 
-.timeline-content {
+.-content {
     background: var(--color-card);
     border-radius: var(--radius-md);
     padding: 2rem;
@@ -1543,27 +1543,27 @@ a {
     height: 100%;
 }
 
-.timeline-content h3 {
+.-content h3 {
     font-size: 1.25rem;
     font-weight: 700;
     margin-bottom: 0.75rem;
     color: var(--color-text);
 }
 
-.timeline-content p {
+.-content p {
     color: var(--color-text-muted);
     font-size: 0.95rem;
     line-height: 1.8;
     text-align: left;
 }
 
-.timeline-content ul {
+.-content ul {
     list-style: none;
     margin: 0.5rem 0;
     padding: 0;
 }
 
-.timeline-content ul li {
+.-content ul li {
     color: var(--color-text-muted);
     font-size: 0.95rem;
     line-height: 1.8;
@@ -1573,7 +1573,7 @@ a {
     margin-bottom: 0.25rem;
 }
 
-.timeline-content ul li::before {
+.-content ul li::before {
     content: '•';
     position: absolute;
     left: 0;
@@ -1581,7 +1581,7 @@ a {
 }
 
 @media (max-width: 768px) {
-    .timeline-horizontal {
+    .-horizontal {
         grid-template-columns: 1fr;
         gap: 1.5rem;
         padding-left: 0;
@@ -1598,9 +1598,9 @@ a {
     }
 
     .timeline-marker {
-        width: 40px;
-        height: 40px;
-        font-size: 1rem;
+        width: 60px;
+        height: 60px;
+        font-size: 3rem;
         margin-bottom: 0;
         border-radius: 0;
         border: none;
