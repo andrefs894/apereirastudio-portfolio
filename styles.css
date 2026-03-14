@@ -1328,6 +1328,7 @@ a {
    Project Page Styles
    ======================================== */
 .project-hero {
+   min-height: 100vh;
     padding-top: 4.5rem;
 }
 
