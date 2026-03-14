@@ -1327,13 +1327,13 @@ a {
 /* ========================================
    Project Page Styles
    ======================================== */
-.project-hero {
+. {
    min-height: 100vh;
    padding-top: 4.5rem;
    background: var(--color-bg-dark);
 }
 
-.project-hero-inner {
+.-inner {
    display: grid;
     grid-template-columns: 1.2fr 1fr;
     gap: 3rem;
@@ -1754,8 +1754,8 @@ a {
 }
 
 @media (max-width: 768px) {
-    .project-hero {
-        padding-top: 4rem;
+    . {
+        padding-top: 6rem;
     }
 
     .project-hero-inner {
