@@ -862,27 +862,31 @@ a {
     .services-list {
         padding: 0 2rem;
     }
-    
+
     .service-header {
         gap: 1.25rem;
     }
-    
+
     .service-icon {
         width: 60px;
         height: 60px;
         font-size: 1.5rem;
         border-radius: 14px;
     }
-    
+
     .service-toggle span:first-child {
         display: none;
     }
-    
+
+    .service-item.active .service-details {
+        max-height: 1000px;
+    }
+
     .service-details-inner {
         margin-left: 0;
         padding-top: 1rem;
     }
-    
+
     .service-details-inner ul {
         grid-template-columns: 1fr;
     }
@@ -1275,19 +1279,29 @@ a {
     .nav-links {
         display: none;
     }
-    
+
     .nav-toggle {
         display: flex;
     }
-    
+
     .mobile-menu {
         display: flex;
     }
-    
+
     .hero-title {
         font-size: 2.2rem;
     }
-    
+
+    .work,
+    .services,
+    .testimonials {
+        padding: 3rem 0;
+    }
+
+    .section-header {
+        margin-bottom: 1.5rem;
+    }
+
     .work-grid {
         grid-template-columns: 1fr;
         gap: 1rem;
@@ -1599,15 +1613,19 @@ a {
         align-items: center;
         text-align: center;
         gap: 0;
+        position: relative;
     }
 
     .timeline-item::before {
         content: '';
-        width: 60px;
+        position: absolute;
+        top: 25px;
+        left: 0;
+        right: 0;
         height: 3px;
         background: var(--color-primary);
         border-radius: 3px;
-        margin-bottom: 1rem;
+        z-index: 0;
     }
 
     .timeline-marker {
@@ -1620,6 +1638,8 @@ a {
         border: 3px solid var(--color-primary);
         background: var(--color-card);
         color: var(--color-primary);
+        position: relative;
+        z-index: 1;
     }
 
     .timeline-content {
@@ -1718,6 +1738,9 @@ a {
 
 .project-nav-item:last-child {
     text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .project-nav-item:hover {
@@ -1816,26 +1839,34 @@ a {
     }
     
     .project-nav-item {
-        padding: 3rem 2rem;
-        text-align: left;
+        padding: 2rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
     }
-    
+
     .project-nav-item:first-child {
         border-right: none;
         border-bottom: 1px solid rgba(255,255,255,0.1);
+        flex-direction: row-reverse;
     }
-    
+
     .project-nav-item:last-child {
         text-align: left;
+        flex-direction: row;
+        align-items: center;
     }
-    
+
     .project-nav-title {
         font-size: 1.5rem;
     }
-    
+
     .project-nav-arrow {
         width: 40px;
         height: 40px;
         font-size: 1.2rem;
+        margin-top: 0;
+        flex-shrink: 0;
     }
 }
