@@ -1327,18 +1327,18 @@ a {
 /* ========================================
    Project Page Styles
    ======================================== */
-. {
-   min-height: 100vh;
-   padding-top: 4.5rem;
-   background: var(--color-bg-dark);
+.project-hero {
+    padding-top: 4.5rem;
 }
 
-.-inner {
-   display: grid;
+.project-hero-inner {
+    background: var(--color-bg-dark);
+    display: grid;
     grid-template-columns: 1.2fr 1fr;
     gap: 3rem;
     align-items: center;
-    padding: 6rem 4rem;
+    min-height: 450px;
+    padding: 3rem 4rem;
 }
 
 .project-image-container {
@@ -1359,7 +1359,7 @@ a {
 
 .project-main-image img {
     width: 100%;
-    height: 450px;
+    height: 350px;
     object-fit: cover;
 }
 
@@ -1439,42 +1439,6 @@ a {
     padding: 4rem 3rem;
 }
 
-.project-scroll-indicator {
-    position: absolute;
-    bottom: 3rem;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.75rem;
-    color: rgba(255,255,255,0.5);
-    text-decoration: none;
-}
-
-.project-scroll-indicator span {
-    font-size: 0.75rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
-}
-
-.scroll-arrow {
-    width: 40px;
-    height: 40px;
-    border: 2px solid rgba(255,255,255,0.3);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.25rem;
-    animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(6px); }
-}
 .process-header {
     text-align: center;
     margin-bottom: 3rem;
@@ -1698,7 +1662,7 @@ a {
 }
 
 .project-nav-item {
-    padding: 4rem 4rem;
+    padding: 5rem 3rem;
     position: relative;
     transition: all 0.3s ease;
     text-decoration: none;
@@ -1754,7 +1718,7 @@ a {
 }
 
 @media (max-width: 768px) {
-    . {
+    .project-hero {
         padding-top: 4rem;
     }
 
