@@ -911,7 +911,6 @@ a {
     background: var(--color-card);
     border-radius: var(--radius-lg);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-    transition: all 0.4s var(--ease-out);
     position: relative;
 }
 
@@ -1551,7 +1550,6 @@ a {
     border-radius: var(--radius-md);
     padding: 2rem;
     box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-   transition: all 0.4s var(--ease-out);
     height: 100%;
 }
 
