@@ -1343,7 +1343,6 @@ a {
    ======================================== */
 .project-hero {
    min-height: 100vh;
-   padding-top: 4.5rem;
    background: var(--color-bg-dark);
 }
 
