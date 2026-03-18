@@ -910,6 +910,7 @@ a {
     padding: 2.5rem;
     background: var(--color-card);
     border-radius: var(--radius-lg);
+   transition: all 0.4s var(--ease-out);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
     position: relative;
 }
@@ -1549,8 +1550,14 @@ a {
     background: var(--color-card);
     border-radius: var(--radius-md);
     padding: 2rem;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+   transition: all 0.4s var(--ease-out);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
     height: 100%;
+}
+
+.timeline-content:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
 }
 
 .timeline-content h3 {
