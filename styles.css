@@ -402,7 +402,7 @@ a {
 }
 
 .section-alt {
-    background: var(--color-bg-alt);
+    background: var(--color-bg-alt) !important;
 }
 
 @media (max-width: 1024px) {
