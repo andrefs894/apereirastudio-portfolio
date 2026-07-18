@@ -26,7 +26,10 @@
       "Bash(cp __TRACKED_VAR__/capa.png images/santotalho/santotalho1.png)",
       "Bash(cp __TRACKED_VAR__/design_tabuadecorte_identidadevisual_talho.png images/santotalho/santotalho2.png)",
       "Bash(cp __TRACKED_VAR__/desig_saco_identidadevisual_talho.png images/santotalho/santotalho3.png)",
-      "Bash(cp __TRACKED_VAR__/papelseda.png images/santotalho/santotalho4.png)"
+      "Bash(cp __TRACKED_VAR__/papelseda.png images/santotalho/santotalho4.png)",
+      "Bash(gh api *)",
+      "Bash(xargs -I{} ls -la \"{}\")",
+      "Bash(sort -k6,7)"
     ],
     "additionalDirectories": [
       "C:\\Users\\ANDRSI~1\\AppData\\Local\\Temp\\claude\\c--Users-Andr--Silva-Documents-apereirastudio-portfolio\\cb8fb2ac-bb9d-423f-bf06-520f66f14abb\\scratchpad"
