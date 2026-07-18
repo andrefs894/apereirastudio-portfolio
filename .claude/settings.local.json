@@ -3,7 +3,33 @@
     "allow": [
       "Bash(git add:*)",
       "Bash(git commit:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(git push *)",
+      "Read(//c/Users/André Silva/Downloads/**)",
+      "Bash(python -c \"import sys; print\\(sys.version\\)\")",
+      "Bash(python -m http.server 8765 --bind 127.0.0.1)",
+      "Bash(curl -s http://127.0.0.1:8765/styles.css)",
+      "Bash(curl -s http://127.0.0.1:8765/index.html)",
+      "WebSearch",
+      "WebFetch(domain:pixabay.com)",
+      "WebFetch(domain:commons.wikimedia.org)",
+      "Bash(ls \"/c/Users/André Silva/Documents/apereirastudio-portfolio/images\" | head; echo \"---\"; cp \"/c/Users/ANDRSI~1/AppData/Local/Temp/claude/c--Users-Andr--Silva-Documents-apereirastudio-portfolio/cb8fb2ac-bb9d-423f-bf06-520f66f14abb/scratchpad/pin-real.png\" \"/c/Users/André Silva/Documents/apereirastudio-portfolio/images/pushpin.png\" && echo \"copied\" && ls -la \"/c/Users/André Silva/Documents/apereirastudio-portfolio/images/pushpin.png\")",
+      "Bash(ls -la \"/c/Users/André Silva/Downloads/\" | grep -i \"Screenshot 2026-07-18 165620\" ; echo \"---all recent pngs---\"; ls -lat \"/c/Users/André Silva/Downloads/\"*.png 2>/dev/null | head)",
+      "Read(//c/Users/André Silva/Downloads//**)",
+      "Bash(cp \"/c/Users/André Silva/Documents/apereirastudio-portfolio/images/pinned-note.png\" \"/c/Users/ANDRSI~1/AppData/Local/Temp/claude/c--Users-Andr--Silva-Documents-apereirastudio-portfolio/cb8fb2ac-bb9d-423f-bf06-520f66f14abb/scratchpad/note.png\" && echo ok)",
+      "PowerShell(& python -m pip install --quiet --user Pillow numpy 2>&1)",
+      "PowerShell(& python -c \"import PIL, numpy; print\\('OK', PIL.__version__, numpy.__version__\\)\" 2>&1)",
+      "PowerShell(& python \"C:\\\\Users\\\\ANDRSI~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-Andr--Silva-Documents-apereirastudio-portfolio\\\\cb8fb2ac-bb9d-423f-bf06-520f66f14abb\\\\scratchpad\\\\sample.py\")",
+      "PowerShell(& python -m pip install --quiet --user scipy 2>&1)",
+      "PowerShell(& python \"C:\\\\Users\\\\ANDRSI~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-Andr--Silva-Documents-apereirastudio-portfolio\\\\cb8fb2ac-bb9d-423f-bf06-520f66f14abb\\\\scratchpad\\\\cutout.py\")",
+      "Bash(mkdir -p images/santotalho)",
+      "Bash(cp __TRACKED_VAR__/capa.png images/santotalho/santotalho1.png)",
+      "Bash(cp __TRACKED_VAR__/design_tabuadecorte_identidadevisual_talho.png images/santotalho/santotalho2.png)",
+      "Bash(cp __TRACKED_VAR__/desig_saco_identidadevisual_talho.png images/santotalho/santotalho3.png)",
+      "Bash(cp __TRACKED_VAR__/papelseda.png images/santotalho/santotalho4.png)"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\ANDRSI~1\\AppData\\Local\\Temp\\claude\\c--Users-Andr--Silva-Documents-apereirastudio-portfolio\\cb8fb2ac-bb9d-423f-bf06-520f66f14abb\\scratchpad"
     ]
   }
 }
