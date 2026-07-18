@@ -48,6 +48,8 @@ body {
     line-height: 1.6;
     color: var(--color-text);
     background-color: var(--color-bg);
+    background-image: url('images/bg-pattern.png');
+    background-repeat: repeat;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -531,7 +533,7 @@ a {
    ======================================== */
 .work {
     padding: 4rem 0;
-    background: var(--color-bg);
+    background: transparent;
 }
 
 .work-grid {
@@ -647,7 +649,7 @@ a {
 
 .services {
     padding: 4rem 0;
-    background: var(--color-bg);
+    background: transparent;
 }
 
 .services-list {
@@ -898,7 +900,7 @@ a {
    ======================================== */
 .testimonials {
     padding: 4rem 0;
-    background: var(--color-bg);
+    background: transparent;
 }
 
 .testimonials-grid {
@@ -912,7 +914,7 @@ a {
 
 .testimonial-card {
     padding: 2.5rem;
-    background: var(--color-card);
+    background: var(--color-card) url('images/bg-pattern.png') repeat;
     border-radius: var(--radius-lg);
    transition: all 0.4s var(--ease-out);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
@@ -1078,7 +1080,7 @@ a {
    Footer
    ======================================== */
 .footer {
-    background: var(--color-bg);
+    background: transparent;
 }
 
 .footer-main {
@@ -1551,7 +1553,7 @@ a {
 }
 
 .timeline-content {
-    background: var(--color-card);
+    background: var(--color-card) url('images/bg-pattern.png') repeat;
     border-radius: var(--radius-md);
     padding: 2rem;
    transition: all 0.4s var(--ease-out);
