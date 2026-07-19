@@ -70,7 +70,13 @@
       "Bash(python3 -c \"import playwright; print\\('py-playwright ok'\\)\")",
       "Bash(node --check script.js)",
       "Bash(rm -f _verify_tmp.html)",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(curl -sS -A \"Mozilla/5.0\" \"https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700,800,900,1&display=swap\" -D - -o /tmp/fs.css)",
+      "Read(//tmp/**)",
+      "Bash(curl -sS -I -m 15 \"https://apereirastudio.com/\")",
+      "Bash(curl -sS -m 15 -A \"Mozilla/5.0\" \"https://apereirastudio.com/\")",
+      "Bash(python3 -)"
     ],
     "additionalDirectories": [
       "C:\\Users\\ANDRSI~1\\AppData\\Local\\Temp\\claude\\c--Users-Andr--Silva-Documents-apereirastudio-portfolio\\cb8fb2ac-bb9d-423f-bf06-520f66f14abb\\scratchpad",
