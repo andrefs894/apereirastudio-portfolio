@@ -7,19 +7,55 @@ function toggleService(header) {
     const item = header.parentElement;
     const isActive = item.classList.contains('active');
     const icon = header.querySelector('.service-toggle-icon');
-    
-    // Close all other items and reset icons
+
+    // Remember where the clicked header sits in the viewport
+    const prevTop = header.getBoundingClientRect().top;
+
+    // Collapse every OTHER open panel instantly (no transition) so the layout
+    // shift is applied at once and we can compensate the scroll for it
     document.querySelectorAll('.service-item').forEach(el => {
+        if (el === item) return;
         el.classList.remove('active');
         el.querySelector('.service-toggle-icon').textContent = '+';
+        const details = el.querySelector('.service-details');
+        if (details) {
+            details.style.transition = 'none';
+            details.style.maxHeight = null;
+        }
     });
-    
-    // Toggle current item
-    if (!isActive) {
+
+    // Toggle the clicked item (this keeps its normal open/close animation)
+    const details = item.querySelector('.service-details');
+    if (isActive) {
+        item.classList.remove('active');
+        icon.textContent = '+';
+        if (details) details.style.maxHeight = null;
+    } else {
         item.classList.add('active');
         icon.textContent = '−';
+        if (details) details.style.maxHeight = details.scrollHeight + 'px';
     }
+
+    // Keep the clicked header anchored: undo any shift caused by the instant
+    // collapse of the other panel(s) above it
+    const newTop = header.getBoundingClientRect().top;
+    if (newTop !== prevTop) {
+        window.scrollBy({ top: newTop - prevTop, behavior: 'instant' });
+    }
+
+    // Restore transitions so future toggles animate normally
+    requestAnimationFrame(() => {
+        document.querySelectorAll('.service-details').forEach(d => {
+            if (d !== details) d.style.transition = '';
+        });
+    });
 }
+
+// Keep an open service panel sized to its content when the viewport changes
+window.addEventListener('resize', () => {
+    const openItem = document.querySelector('.service-item.active .service-details');
+    if (openItem) openItem.style.maxHeight = openItem.scrollHeight + 'px';
+});
 
 document.addEventListener('DOMContentLoaded', () => {
     // Navigation scroll effect
