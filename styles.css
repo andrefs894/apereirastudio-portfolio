@@ -1088,6 +1088,7 @@ a {
     scroll-padding-inline: 3rem;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain;
     scrollbar-width: none;
     -ms-overflow-style: none;
 }
@@ -1594,8 +1595,17 @@ a {
         flex-basis: 100%;
     }
 
-    .testimonial-nav {
-        display: none;
+    .testimonial-nav img {
+        width: 34px;
+        height: 34px;
+    }
+
+    .testimonial-nav-prev {
+        left: 8px;
+    }
+
+    .testimonial-nav-next {
+        right: 8px;
     }
 
     .section-header,
