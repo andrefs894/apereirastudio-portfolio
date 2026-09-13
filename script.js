@@ -78,19 +78,43 @@ document.addEventListener('DOMContentLoaded', () => {
     const navToggle = document.querySelector('.nav-toggle');
     const mobileMenu = document.querySelector('.mobile-menu');
     const mobileLinks = document.querySelectorAll('.mobile-menu a');
+    let lockedScrollY = 0;
+
+    // overflow:hidden alone doesn't stop background scroll on touch devices,
+    // which drags the page underneath and makes the fixed overlay look like
+    // it's being clipped/hidden as you scroll — pin body scroll position instead
+    const lockScroll = () => {
+        lockedScrollY = window.scrollY;
+        document.body.style.position = 'fixed';
+        document.body.style.top = `-${lockedScrollY}px`;
+        document.body.style.left = '0';
+        document.body.style.right = '0';
+    };
+
+    const unlockScroll = () => {
+        document.body.style.position = '';
+        document.body.style.top = '';
+        document.body.style.left = '';
+        document.body.style.right = '';
+        window.scrollTo(0, lockedScrollY);
+    };
 
     if (navToggle && mobileMenu) {
         navToggle.addEventListener('click', () => {
             mobileMenu.classList.toggle('active');
             navToggle.classList.toggle('active');
-            document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+            if (mobileMenu.classList.contains('active')) {
+                lockScroll();
+            } else {
+                unlockScroll();
+            }
         });
 
         mobileLinks.forEach(link => {
             link.addEventListener('click', () => {
                 mobileMenu.classList.remove('active');
                 navToggle.classList.remove('active');
-                document.body.style.overflow = '';
+                unlockScroll();
             });
         });
     }
@@ -181,6 +205,34 @@ document.addEventListener('DOMContentLoaded', () => {
                 hero.style.opacity = 1 - (scrolled * 0.001);
             }
         });
+    }
+
+    // Testimonials carousel
+    const testimonialsGrid = document.querySelector('.testimonials-grid');
+    if (testimonialsGrid) {
+        const prevBtn = document.querySelector('.testimonial-nav-prev');
+        const nextBtn = document.querySelector('.testimonial-nav-next');
+
+        const scrollByCard = (direction) => {
+            const card = testimonialsGrid.querySelector('.testimonial-card');
+            const gap = parseFloat(getComputedStyle(testimonialsGrid).columnGap) || 24;
+            const amount = (card ? card.getBoundingClientRect().width : 340) + gap;
+            testimonialsGrid.scrollBy({ left: amount * direction, behavior: 'smooth' });
+        };
+
+        const updateNavState = () => {
+            const maxScroll = testimonialsGrid.scrollWidth - testimonialsGrid.clientWidth;
+            prevBtn.classList.toggle('is-hidden', testimonialsGrid.scrollLeft <= 4);
+            nextBtn.classList.toggle('is-hidden', testimonialsGrid.scrollLeft >= maxScroll - 4);
+        };
+
+        if (prevBtn && nextBtn) {
+            prevBtn.addEventListener('click', () => scrollByCard(-1));
+            nextBtn.addEventListener('click', () => scrollByCard(1));
+            testimonialsGrid.addEventListener('scroll', updateNavState);
+            window.addEventListener('resize', updateNavState);
+            updateNavState();
+        }
     }
 
     // Language switcher dropdown
